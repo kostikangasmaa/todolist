@@ -9,7 +9,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import dayjs from "dayjs";
+import dayjs, { Dayjs } from "dayjs";
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-material.css"; // Material Design theme
 
@@ -80,7 +80,7 @@ function TodoList() {
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <DatePicker
             onChange={(newDate) => setTodo({ ...todo, date: newDate })}
-            value={todo.date} 
+            value={todo.date}
             format="DD.MM.YYYY"
             />
         </LocalizationProvider>

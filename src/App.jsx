@@ -4,6 +4,7 @@ import TodoList from "./TodoList";
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import { Link, Outlet } from 'react-router-dom';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Toolbar>
           <Typography variant="h6">
             My Todos
-          </Typography>  
+          </Typography>
         </Toolbar>
       </AppBar>
       <TodoList />
